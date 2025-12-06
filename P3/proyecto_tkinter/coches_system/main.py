@@ -1,11 +1,18 @@
+'''
+1-. Paradigma OO
+2-. Implementar el MVC
+3-. App de Escritorio con interfaz gráfica
+'''
+from view import vista
 from tkinter import *
-from view import interfaz
 
-class App():
+class App:
     def __init__(self,ventana):
-        self.view= interfaz.Interfaz(ventana)
-    
-    
+        view=vista.Vistas(ventana)
+
+# def main():
+#     interfaz.interfaz()
+
 if __name__=="__main__":
     ventana=Tk()
     app=App(ventana)
